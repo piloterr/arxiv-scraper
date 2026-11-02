@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "2201.00978 or https://arxiv.org/abs/cond-mat/0011267v1.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -208,7 +208,7 @@ response = requests.get(
     params={
         "query": "electron. A paper URL such as https://arxiv.org/abs/2201.00978 returns 400.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
